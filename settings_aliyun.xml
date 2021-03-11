@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<localRepository>/skymind/maven_repository</localRepository>
+   <mirrors>
+    <mirror>
+        <id>alimaven</id>
+        <name>aliyun maven</name>
+        <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+  <servers>
+	
+  </servers>
+   <profiles>
+		<profile>
+            	<id>jdk-1.4</id>
+            
+            	<activation>
+            		<jdk>1.4</jdk>
+            	</activation>
+            
+            	<repositories>
+            		<repository>
+            			<id>nexus</id>
+            			<name>local private nexus</name>
+            			<url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            			<releases>
+            				<enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+            			</releases>
+            			<snapshots>
+            				<enabled>false</enabled>
+            			</snapshots>
+            		</repository>
+            		
+            	</repositories>
+            	<pluginRepositories>
+            		<pluginRepository>
+            			<id>nexus</id>
+            			<name>local private nexus</name>
+            			<url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            			<releases>
+            				<enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+            			</releases>
+            			<snapshots>
+            				<enabled>false</enabled>
+            			</snapshots>
+            		</pluginRepository>
+            	</pluginRepositories>
+            </profile>
+	</profiles>
+</settings>
