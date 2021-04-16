@@ -55,7 +55,7 @@ public class InceptionResNetV1Classification {
 
     protected static Random random = new Random(seed);
 
-    protected static int epochs = 100;
+    protected static int epochs = 1;
 
     public static String dataSetPath ="dataset/Fashion-MNIST";
 
