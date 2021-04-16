@@ -3,7 +3,7 @@
 	"classesNumber": 20,
 	"boundingBoxPriors":[[0.8037702661007752,0.5095511477783752],[1.0352214570612353,1.9210235636200457],[2.2912448764801034,0.9170169072858239],[3.345651778973358,2.8172730239061043],[6.06486016605013,9.325720285651695]],
 	"learningRate": 1.0E-4,
-	"dataDir": "/Volumes/feng/ai/dataset/VOCdevkit/VOC2012",
+	"dataDir": "dataset/VOC2012",
 	"batchSize": 2,
 	"epochs": 1,
 	"inputWidth": 416,
