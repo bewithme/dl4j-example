@@ -29,6 +29,7 @@ public class App {
 
         log.info(appRunOptions.getEntryClass()+" start ");
 
+        long startTime=System.currentTimeMillis();
             try {
 
 
@@ -54,8 +55,9 @@ public class App {
 
                 log.error("",e);
             }
+        long endTime=System.currentTimeMillis();
 
-        log.info(appRunOptions.getEntryClass()+" end ");
+        log.info(appRunOptions.getEntryClass()+" end, cost"+(endTime-startTime)/1000L+" S");
 
 
 
